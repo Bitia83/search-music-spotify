@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { AuthTokenProvider } from './hooks/AuthTokenContext';
-//import { RoomProvider } from './hooks/RoomContext';
 import { ErrorProvider } from './hooks/ErrorContext';
 
 const theme = extendTheme({

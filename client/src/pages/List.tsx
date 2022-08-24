@@ -1,7 +1,7 @@
-import { Button, Grid } from '@chakra-ui/react';
+import {  Grid } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Socket } from 'socket.io-client';
+
 import AddSong from '../components/AddSong';
 import NowPlaying from '../components/NowPlaying';
 import { useAuthTokenContext } from '../hooks/AuthTokenContext';
@@ -14,7 +14,7 @@ import Helmet from 'react-helmet';
 interface QueueProps {
 
 }
-const Queue: React.FC<QueueProps> = () => {
+const List: React.FC<QueueProps> = () => {
   const navigate = useNavigate();
 
  
@@ -51,4 +51,4 @@ const Queue: React.FC<QueueProps> = () => {
   );
 };
 
-export default Queue;
+export default List;

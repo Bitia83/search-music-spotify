@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Welcome from './pages/Welcome';
-import Queue from './pages/Queue';
+import List from './pages/List';
 import Header from './components/Header';
 import { io, Socket } from 'socket.io-client';
 import {Box,} from '@chakra-ui/react';
@@ -44,7 +44,7 @@ const App: React.FC <AppProps>= ({}) => {
             <Route
               path="/queue"
               element={
-                <Queue/>
+                <List/>
               }
             />
            

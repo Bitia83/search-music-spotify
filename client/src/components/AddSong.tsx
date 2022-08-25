@@ -21,8 +21,8 @@ const AddSong: React.FC<AddSongProps> = ({ }) => {
 
   return (
     <>
-      <Heading>SEARCH MUSIC</Heading>
-      <Flex flexDir="row">
+      <Heading mb={2}>SEARCH MUSIC</Heading>
+      <Flex flexDir="row" >
         <Input
           placeholder="Enter a song name"
           value={songInput}
